@@ -12,8 +12,8 @@ const LocalTime = () => {
           bgSize: "cover",
           bgPos: "center",
           transition: "all 0.5s ease-in-out",
-          rounded: "24px",
         }}
+        rounded="24px"
       >
         <Flex
           color="#fff"
