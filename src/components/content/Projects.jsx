@@ -1,9 +1,10 @@
 import React from "react";
 import { VStack, Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { INFORMATION } from "../../config/constants/information";
 
 const Projects = () => {
   return (
-    <Box m="auto"  maxW={{ base: "calc(100%5 - 50px)", lg: "full" }}>
+    <Box m="auto" maxW={{ base: "calc(100% - 50px)", lg: "full" }}>
       <Flex justify="space-between" align="center">
         <Heading color="#d9d9d9" fontSize="24px">
           Projects
@@ -16,7 +17,7 @@ const Projects = () => {
         maxH="600px"
         overflowY="auto"
       >
-        {new Array(100).fill(0).map((_, index) => (
+        {INFORMATION.PROJECTS.map((item, index) => (
           <Box
             key={index}
             rounded="12px"
@@ -26,7 +27,7 @@ const Projects = () => {
             cursor="pointer"
             as="a"
             target="_blank"
-            href="https://app.evolv-systems.com"
+            href={item.link}
             _hover={{
               shadow: "md",
               bg: "#1f1f1f",
@@ -34,10 +35,10 @@ const Projects = () => {
             }}
           >
             <Flex justify="space-between">
-              <Heading fontSize="16px">Evolv LMS</Heading>
-              <Text>2020</Text>
+              <Heading fontSize="16px">{item.title}</Heading>
+              <Text>{item.date}</Text>
             </Flex>
-            <Text color="#fff">Frontend Development</Text>
+            <Text color="#fff">{item.category}</Text>
           </Box>
         ))}
       </VStack>

@@ -1,10 +1,11 @@
 import { Card, CardBody, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import GlareIcon from "../icons/GlareIcon";
+import { INFORMATION } from "../../config/constants/information";
 
 const Skills = () => {
   return (
-    <Card m="auto"  maxW={{ base: "calc(100%5 - 50px)", lg: "full" }} role="group" bg="#745cd6" h="444px" rounded="24px">
+    <Card m="auto"  maxW={{ base: "calc(100% - 50px)", lg: "full" }} role="group" bg="#745cd6" h="444px" rounded="24px">
       <CardBody
         _groupHover={{
           bg: "#00000028",
@@ -31,7 +32,7 @@ const Skills = () => {
           </Flex>
 
           <VStack spacing="8px" align="stretch">
-            {["JavaScript", "React", "Redux", "Node", "Express", "MongoDB"].map(
+            {INFORMATION.SKILLS.map(
               (skill, index) => (
                 <Text fontSize="16px" key={index}>
                   {skill}

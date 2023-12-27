@@ -1,5 +1,6 @@
 import { Card, CardBody, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import React, { useRef } from "react";
+import { INFORMATION } from "../../config/constants/information";
 
 const Reviews = () => {
   const ref = useRef(null);
@@ -7,7 +8,7 @@ const Reviews = () => {
   return (
     <Card
       m="auto"
-      maxW={{ base: "calc(100%5 - 50px)", lg: "full" }}
+      maxW={{ base: "calc(100% - 50px)", lg: "full" }}
       bg="#0e0e0e"
       h="full"
       rounded="24px"
@@ -23,10 +24,9 @@ const Reviews = () => {
               minW="250px"
               maxW="250px"
             >
-              <Heading fontSize="16px">Shehzad Ahmed</Heading>
+              <Heading fontSize="16px">{INFORMATION.NAME}</Heading>
               <Text fontSize="12px">
-                "I create intuitive and visually stunning UI/UX designs that
-                help businesses connect with their target audiences."
+                {INFORMATION.BRIEF}
               </Text>
             </Flex>
           ))}

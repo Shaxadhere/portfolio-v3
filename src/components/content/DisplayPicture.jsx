@@ -1,17 +1,16 @@
 import React from "react";
-import { Card, GridItem } from "@chakra-ui/react";
-import APP_IMAGES from "../../config/constants/images";
+import { Card } from "@chakra-ui/react";
+import { INFORMATION } from "../../config/constants/information";
 
 const DisplayPicture = () => {
   return (
     <Card
-      // h="680px"
-      maxW={{ base: "calc(100%5 - 50px)", lg: "full" }}
+      maxW={{ base: "calc(100% - 50px)", lg: "full" }}
       m="auto"
       h="full"
       w="full"
       rounded="24px"
-      bgImage={`url(${APP_IMAGES.ME})`}
+      bgImage={`url(${INFORMATION.PROFILE_PICTURE})`}
       bgPos="center"
       filter={"grayscale(80%)"}
       bgSize="cover"

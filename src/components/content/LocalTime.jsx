@@ -3,6 +3,7 @@ import { Card, CardBody, Flex, Box, Heading, Text } from "@chakra-ui/react";
 import moment from "moment-timezone";
 import APP_IMAGES from "../../config/constants/images";
 import useForceUpdate from "../../config/hooks/useForceUpdate";
+import { INFORMATION } from "../../config/constants/information";
 
 const LocalTime = () => {
   const forceUpdate = useForceUpdate();
@@ -15,10 +16,17 @@ const LocalTime = () => {
   }, []);
 
   return (
-    <Card m="auto" maxW={{ base: "calc(100%5 - 50px)", lg: "full" }} h="full" role="group" bg="#0e0e0e" rounded="24px">
+    <Card
+      m="auto"
+      maxW={{ base: "calc(100% - 50px)", lg: "full" }}
+      h="full"
+      role="group"
+      bg="#0e0e0e"
+      rounded="24px"
+    >
       <CardBody
         _groupHover={{
-          bgImage: `url(${APP_IMAGES.CITY_IMAGE})`,
+          bgImage: `url(${INFORMATION.CITY_PICTURE})`,
           filter: "saturate(1)",
           bgSize: "cover",
           bgPos: "center",
@@ -33,12 +41,12 @@ const LocalTime = () => {
           justify={"space-between"}
         >
           <Heading fontSize="40px">
-            {moment(new Date()).tz("Asia/Karachi").format("HH:mm")}
+            {moment(new Date()).tz(INFORMATION.LOCAL_TIME_ZONE).format("HH:mm")}
           </Heading>
           <Box>
             <Heading fontSize="24px">LOCAL TIME</Heading>
-            <Text>Karachi,</Text>
-            <Text>Pakistan</Text>
+            <Text>{INFORMATION.CITY},</Text>
+            <Text>{INFORMATION.COUNTRY}</Text>
           </Box>
         </Flex>
       </CardBody>
