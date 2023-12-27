@@ -39,6 +39,9 @@ const App = () => {
         <GridItem colSpan={1}>
           <Links />
         </GridItem>
+        <GridItem colSpan={1}>
+          <Links />
+        </GridItem>
       </Grid>
     </Box>
   );
