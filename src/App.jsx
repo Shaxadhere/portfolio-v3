@@ -27,7 +27,6 @@ const App = () => {
     <Box
       w="full"
       h="100vh"
-      px={{ base: "30px", lg: "80px" }}
       py={{ base: "30px", lg: "60px" }}
     >
       <Grid

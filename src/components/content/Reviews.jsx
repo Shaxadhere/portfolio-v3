@@ -5,7 +5,13 @@ const Reviews = () => {
   const ref = useRef(null);
 
   return (
-    <Card bg="#0e0e0e" h="full" rounded="24px">
+    <Card
+      m="auto"
+      maxW={{ base: "calc(100%5 - 50px)", lg: "full" }}
+      bg="#0e0e0e"
+      h="full"
+      rounded="24px"
+    >
       <CardBody overflowX="auto" className="scrollbar-hidden">
         <HStack ref={ref} h="full" spacing={4} color="#d9d9d9">
           {new Array(20).fill(0).map((item, index) => (

@@ -6,12 +6,16 @@ body {
   font-size: 16px;
   color: #333;
   background-color: #000 !important;
+  /* padding-inline: 40px; */
+  /* padding-block: 20px; */
+}
+body {
+  padding: 20px 40px;
 }
 
 * {
   font-family: "Inter", sans-serif !important;
 }
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hidden::-webkit-scrollbar {
@@ -22,4 +26,11 @@ body {
 .scrollbar-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
+}
+
+/* phone screen media query */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
 }

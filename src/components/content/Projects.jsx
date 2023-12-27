@@ -3,7 +3,7 @@ import { VStack, Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const Projects = () => {
   return (
-    <Box>
+    <Box m="auto"  maxW={{ base: "calc(100%5 - 50px)", lg: "full" }}>
       <Flex justify="space-between" align="center">
         <Heading color="#d9d9d9" fontSize="24px">
           Projects

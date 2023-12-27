@@ -4,7 +4,7 @@ import GlareIcon from "../icons/GlareIcon";
 
 const Skills = () => {
   return (
-    <Card role="group" bg="#745cd6" h="444px" rounded="24px">
+    <Card m="auto"  maxW={{ base: "calc(100%5 - 50px)", lg: "full" }} role="group" bg="#745cd6" h="444px" rounded="24px">
       <CardBody
         _groupHover={{
           bg: "#00000028",

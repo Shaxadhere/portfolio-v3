@@ -15,7 +15,7 @@ const LocalTime = () => {
   }, []);
 
   return (
-    <Card h="full" role="group" bg="#0e0e0e" rounded="24px">
+    <Card m="auto" maxW={{ base: "calc(100%5 - 50px)", lg: "full" }} h="full" role="group" bg="#0e0e0e" rounded="24px">
       <CardBody
         _groupHover={{
           bgImage: `url(${APP_IMAGES.CITY_IMAGE})`,

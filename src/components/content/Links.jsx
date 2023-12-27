@@ -7,7 +7,7 @@ import APP_IMAGES from "../../config/constants/images";
 
 const Links = () => {
   return (
-    <Card bg="#000" h="200px" rounded="24px">
+    <Card m="auto"  maxW={{ base: "calc(100%5 - 50px)", lg: "full" }} bg="#000" h="200px" rounded="24px">
       <Flex w="full" justify={"space-between"}>
         <Heading color="#fff" fontSize="40px">
           LINKS

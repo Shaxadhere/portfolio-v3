@@ -6,6 +6,8 @@ const DisplayPicture = () => {
   return (
     <Card
       // h="680px"
+      maxW={{ base: "calc(100%5 - 50px)", lg: "full" }}
+      m="auto"
       h="full"
       w="full"
       rounded="24px"

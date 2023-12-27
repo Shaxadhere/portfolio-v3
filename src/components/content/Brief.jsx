@@ -3,7 +3,7 @@ import React from "react";
 
 const Brief = () => {
   return (
-    <Card bg="#0e0e0e" h="200px" rounded="24px">
+    <Card m="auto"  maxW={{ base: "calc(100%5 - 50px)", lg: "full" }} bg="#0e0e0e" h="200px" rounded="24px">
       <CardBody>
         <Flex flexDir="column" h="full" justify="space-around" color="#d9d9d9">
           <Heading>IM SHEHZAD</Heading>
