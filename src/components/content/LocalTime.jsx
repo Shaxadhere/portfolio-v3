@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, CardBody, Flex, Box, Heading, Text } from "@chakra-ui/react";
+import moment from "moment-timezone";
 import APP_IMAGES from "../../config/constants/images";
+import useForceUpdate from "../../config/hooks/useForceUpdate";
 
 const LocalTime = () => {
+  const forceUpdate = useForceUpdate();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      forceUpdate();
+    }, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Card h="full" role="group" bg="#0e0e0e" rounded="24px">
       <CardBody
@@ -21,7 +32,9 @@ const LocalTime = () => {
           flexDir={"column"}
           justify={"space-between"}
         >
-          <Heading fontSize="40px">16:00</Heading>
+          <Heading fontSize="40px">
+            {moment(new Date()).tz("Asia/Karachi").format("HH:mm")}
+          </Heading>
           <Box>
             <Heading fontSize="24px">LOCAL TIME</Heading>
             <Text>Karachi,</Text>

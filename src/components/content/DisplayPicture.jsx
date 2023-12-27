@@ -5,7 +5,8 @@ import APP_IMAGES from "../../config/constants/images";
 const DisplayPicture = () => {
   return (
     <Card
-      h="680px"
+      // h="680px"
+      h="full"
       rounded="24px"
       bgImage={`url(${APP_IMAGES.ME})`}
       bgPos="center"
