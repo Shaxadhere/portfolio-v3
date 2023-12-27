@@ -8,7 +8,7 @@ const LocalTime = () => {
       <CardBody
         _groupHover={{
           bgImage: `url(${APP_IMAGES.CITY_IMAGE})`,
-          filter: "grayscale(20%)",
+          filter: "saturate(1)",
           bgSize: "cover",
           bgPos: "center",
           transition: "all 0.5s ease-in-out",
@@ -16,7 +16,7 @@ const LocalTime = () => {
         }}
       >
         <Flex
-          color="#d9d9d9"
+          color="#fff"
           h="full"
           flexDir={"column"}
           justify={"space-between"}
