@@ -59,7 +59,7 @@ export const INFORMATION = {
         {
             title: "PTax, Your Complete Tax Assistant",
             category: "MERN Stack Development.",
-            link: "https://ptax.herokuapp.com/",
+            link: "https://app.ptax.tax/",
             date: "Sep 2022",
         },
         {
