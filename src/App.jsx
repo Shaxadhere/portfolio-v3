@@ -24,34 +24,39 @@ import Reviews from "./components/content/Reviews";
 
 const App = () => {
   return (
-    <Box w="full" h="100vh">
+    <Box
+      w="full"
+      h="100vh"
+      px={{ base: "30px", lg: "80px" }}
+      py={{ base: "30px", lg: "60px" }}
+    >
       <Grid
         templateColumns="repeat(20, 1fr)"
         templateRows="repeat(20, 1fr)"
         gap={6}
       >
-        <GridItem rowSpan={12} colSpan={{ base: 20, md: 8 }}>
+        <GridItem rowSpan={{ base: 20, md: 12 }} colSpan={{ base: 20, lg: 8 }}>
           <DisplayPicture />
         </GridItem>
-        <GridItem rowSpan={4} colSpan={8}>
+        <GridItem rowSpan={{ base: 10, md: 4 }} colSpan={{ base: 20, lg: 8 }}>
           <Brief />
         </GridItem>
-        <GridItem rowSpan={4} colSpan={4}>
+        <GridItem rowSpan={{ base: 10, md: 4 }} colSpan={{ base: 20, lg: 4 }}>
           <Links />
         </GridItem>
-        <GridItem rowSpan={8} colSpan={5}>
+        <GridItem rowSpan={{ base: 20, md: 8 }} colSpan={{ base: 20, lg: 5 }}>
           <Skills />
         </GridItem>
-        <GridItem rowSpan={8} colSpan={3}>
+        <GridItem rowSpan={{ base: 10, md: 8 }} colSpan={{base:20,lg:3}}>
           <LocalTime />
         </GridItem>
-        <GridItem rowSpan={16} colSpan={4}>
+        <GridItem rowSpan={{ base: 20, md: 16 }} colSpan={{base:20,lg:4}}>
           <Projects />
         </GridItem>
-        <GridItem rowSpan={3} colSpan={{ base: 20, md: 8 }}>
+        <GridItem rowSpan={{ base: 20, md: 3 }} colSpan={{ base: 20, md: 8 }}>
           <Numbers />
         </GridItem>
-        <GridItem rowSpan={3} colSpan={{ base: 20, md: 8 }}>
+        <GridItem rowSpan={{ base: 20, md: 3 }} colSpan={{ base: 20, md: 8 }}>
           <Reviews />
         </GridItem>
       </Grid>

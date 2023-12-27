@@ -7,6 +7,7 @@ const DisplayPicture = () => {
     <Card
       // h="680px"
       h="full"
+      w="full"
       rounded="24px"
       bgImage={`url(${APP_IMAGES.ME})`}
       bgPos="center"
