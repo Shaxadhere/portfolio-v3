@@ -9,6 +9,7 @@ export const INFORMATION = {
     PHONE: "+92 333 1234567",
     BRIEF: `"I create intuitive and visually stunning UI/UX designs that
     help businesses connect with their target audiences."`,
+    RESUME:"https://shehzadahmed.tech/resume.pdf",
 
     LOCAL_TIME_ZONE: "Asia/Karachi",
     CITY_PICTURE: APP_IMAGES.CITY_IMAGE,
@@ -16,11 +17,13 @@ export const INFORMATION = {
     COUNTRY: "Pakistan",
 
     EXPIRIENCE: 4,
+    TOTAL_PROJECTS:30,
 
     LINKS: {
         GITHUB: "https://github.com/shaxadhere",
         TWITTER: "https://twitter.com/shaxaddd",
         LINKEDIN: "https://www.linkedin.com/in/shaxadhere/",
+        KODERLABS: "https://koderlabs.com/",
     },
 
     SKILLS: ["JavaScript", "React", "Redux", "Node", "Express", "MongoDB"],
