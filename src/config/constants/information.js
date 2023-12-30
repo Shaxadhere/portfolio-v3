@@ -94,6 +94,12 @@ export const INFORMATION = {
             category: "Full Stack Development",
             date: "Dec 2020"
         }
+    ],
+    REVIEWS: [
+        {
+            name:"Muhammad Saqlain",
+            text: ''
+        }
     ]
 
 }

@@ -9,6 +9,7 @@ const DisplayPicture = () => {
       m="auto"
       h="full"
       w="full"
+      minH="400px"
       rounded="24px"
       bgImage={`url(${INFORMATION.PROFILE_PICTURE})`}
       bgPos="center"
