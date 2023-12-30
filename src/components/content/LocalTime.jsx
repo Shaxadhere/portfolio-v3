@@ -41,7 +41,9 @@ const LocalTime = () => {
           justify={"space-between"}
         >
           <Heading fontSize="40px">
-            {moment(new Date()).tz(INFORMATION.LOCAL_TIME_ZONE).format("HH:mm")}
+            {moment(new Date())
+              .tz(INFORMATION.LOCAL_TIME_ZONE || "Asia/Karachi")
+              .format("HH:mm")}
           </Heading>
           <Box>
             <Heading fontSize="24px">LOCAL TIME</Heading>
