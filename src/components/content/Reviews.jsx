@@ -5,6 +5,30 @@ import { INFORMATION } from "../../config/constants/information";
 const Reviews = () => {
   const ref = useRef(null);
 
+  const array = [
+    {
+      name: "Techon 3 (2021)",
+      description: "Winner of techon mobile app development competetion"
+    },
+    {
+      name: "Techon 1 (2019)",
+      description: "Winner of techon in web-application development"
+    },
+    {
+      name: "Techwiz (2019)",
+      description: "Participated in word-wide web application development Competetion"
+    },
+    {
+      name: "Ecompetencia (2019)",
+      description: "Winner of ecompetencia-2019 in web application development"
+    },
+    {
+      name: "International Bebras Community (2016)",
+      description: "International challenge on informatics and computational thinking"
+    },
+    
+  ]
+
   return (
     <Card
       m="auto"
@@ -15,7 +39,7 @@ const Reviews = () => {
     >
       <CardBody overflowX="auto" className="scrollbar-hidden">
         <HStack ref={ref} h="full" spacing={4} color="#d9d9d9">
-          {new Array(20).fill(0).map((item, index) => (
+          {array.map((item, index) => (
             <Flex
               key={index}
               flexDir="column"
@@ -24,10 +48,10 @@ const Reviews = () => {
               minW="250px"
               maxW="250px"
             >
-              <Heading fontSize="16px">{INFORMATION.NAME}</Heading>
               <Text fontSize="12px">
-                {INFORMATION.BRIEF}
+                {item.description}
               </Text>
+              <Heading fontSize="16px">{item.name}</Heading>
             </Flex>
           ))}
         </HStack>
