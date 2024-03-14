@@ -9,7 +9,7 @@ export const INFORMATION = {
     PHONE: "+92 333 1234567",
     BRIEF: `"I create intuitive and visually stunning UI/UX designs that
     help businesses connect with their target audiences."`,
-    RESUME:"https://shehzadahmed.tech/resume.pdf",
+    RESUME: "/Shehzad-Ahmed-Resume.pdf",
 
     LOCAL_TIME_ZONE: "Asia/Karachi",
     CITY_PICTURE: APP_IMAGES.CITY_IMAGE,
@@ -17,7 +17,7 @@ export const INFORMATION = {
     COUNTRY: "Pakistan",
 
     EXPIRIENCE: 4,
-    TOTAL_PROJECTS:30,
+    TOTAL_PROJECTS: 30,
 
     LINKS: {
         GITHUB: "https://github.com/shaxadhere",
@@ -97,7 +97,7 @@ export const INFORMATION = {
     ],
     REVIEWS: [
         {
-            name:"Muhammad Saqlain",
+            name: "Muhammad Saqlain",
             text: ''
         }
     ]

@@ -12,12 +12,12 @@ import {
 
 const Experience = () => {
   return (
-    <Box m="auto" maxW={{ base: "full", md: "calc(100% - 400px)" }}>
+    <Box m="auto" maxW={{ base: "full", md:"calc(100% - 200px)", xl: "calc(100% - 400px)" }}>
       <Heading mb={"40px"} color="#d9d9d9" textAlign={"center"}>
         Experiences
       </Heading>
 
-      <SimpleGrid spacing={10} columns={{ base: 1, md: 2 }} m="auto">
+      <SimpleGrid spacing={10} columns={{ base: 1, lg: 2 }} m="auto">
         {[
           {
             designation: "Software Engineer",
@@ -31,8 +31,8 @@ const Experience = () => {
               h: "55px",
               pos: "absolute",
               bottom: "20px",
-              right: "-39px",
-              w: "430px",
+              right: "6px",
+              w: "283px",
               zIndex: 0,
               bgSize: "contain",
             },
@@ -50,8 +50,8 @@ const Experience = () => {
               h: "85px",
               pos: "absolute",
               bottom: "20px",
-              right: "-39px",
-              w: "292px",
+              right: "10px",
+              w: "calc(100vw - 275px)",
               zIndex: 0,
               bgSize: "contain",
             },
@@ -101,13 +101,13 @@ const Experience = () => {
                   </Box>
                 </Flex>
                 <Text zIndex={"inherit"}>{item.text}</Text>
+                {/* <Box
+                  bgImage={`url(${item.logo})`}
+                  bgRepeat={"no-repeat"}
+                  filter={"grayscale(1)"}
+                  // {...item.logoStyles}
+                /> */}
               </Flex>
-              <Box
-                bgImage={`url(${item.logo})`}
-                bgRepeat={"no-repeat"}
-                filter={"grayscale(1)"}
-                {...item.logoStyles}
-              />
             </CardBody>
           </Card>
         ))}

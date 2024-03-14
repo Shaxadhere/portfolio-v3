@@ -57,7 +57,7 @@ const App = () => {
           <Reviews />
         </GridItem>
       </Grid>
-      <Box m="auto" maxW={{ base: "full", md: "calc(100% - 400px)" }}>
+      <Box m="auto" maxW={{ base: "calc(100vw - 50px)", md: "calc(100% - 400px)" }}>
         <Heading mb={"40px"} color="#d9d9d9" textAlign={"center"}>
           My Github Activity
         </Heading>

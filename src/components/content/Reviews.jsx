@@ -26,7 +26,7 @@ const Reviews = () => {
       name: "International Bebras Community (2016)",
       description: "International challenge on informatics and computational thinking"
     },
-    
+
   ]
 
   return (
@@ -34,7 +34,7 @@ const Reviews = () => {
       m="auto"
       maxW={{ base: "calc(100% - 50px)", lg: "full" }}
       bg="#0e0e0e"
-      h="full"
+      h={{ base: "fit-content", lg: "full" }}
       rounded="24px"
     >
       <CardBody overflowX="auto" className="scrollbar-hidden">
