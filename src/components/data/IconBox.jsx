@@ -4,7 +4,7 @@ import React from "react";
 const IconBox = ({ title, link = "#", image, ...rest }) => {
   return (
     <Flex
-      h="100px"
+      h={{ base: "85px", lg: "100px" }}
       w={{ base: "full", lg: "104px" }}
       rounded="8px"
       justify={"center"}
@@ -21,8 +21,8 @@ const IconBox = ({ title, link = "#", image, ...rest }) => {
     >
       <Image
         maxW="full"
-        maxH="70px"
-        w="70px"
+        maxH="60px"
+        w="60px"
         h="full"
         src={image}
         filter="grayscale(100%)"

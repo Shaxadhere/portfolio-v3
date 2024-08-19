@@ -16,8 +16,8 @@ export const INFORMATION = {
     CITY: "Karachi",
     COUNTRY: "Pakistan",
 
-    EXPIRIENCE: 4,
-    TOTAL_PROJECTS: 30,
+    EXPIRIENCE: 5,
+    TOTAL_PROJECTS: 32,
 
     LINKS: {
         GITHUB: "https://github.com/shaxadhere",

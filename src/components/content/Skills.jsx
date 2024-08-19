@@ -5,7 +5,14 @@ import { INFORMATION } from "../../config/constants/information";
 
 const Skills = () => {
   return (
-    <Card m="auto"  maxW={{ base: "calc(100% - 50px)", lg: "full" }} role="group" bg="#745cd6" h="444px" rounded="24px">
+    <Card
+      m="auto"
+      maxW={{ base: "calc(100% - 50px)", lg: "full" }}
+      role="group"
+      bg="#745cd6"
+      h="full"
+      rounded="24px"
+    >
       <CardBody
         _groupHover={{
           bg: "#00000028",
@@ -32,13 +39,11 @@ const Skills = () => {
           </Flex>
 
           <VStack spacing="8px" align="stretch">
-            {INFORMATION.SKILLS.map(
-              (skill, index) => (
-                <Text fontSize="16px" key={index}>
-                  {skill}
-                </Text>
-              )
-            )}
+            {INFORMATION.SKILLS.map((skill, index) => (
+              <Text fontSize="16px" key={index}>
+                {skill}
+              </Text>
+            ))}
           </VStack>
         </Flex>
       </CardBody>

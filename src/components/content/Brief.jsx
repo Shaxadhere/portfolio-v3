@@ -17,13 +17,17 @@ const Brief = () => {
       m="auto"
       maxW={{ base: "calc(100% - 50px)", lg: "full" }}
       bg="#0e0e0e"
-      h="200px"
+      h="full"
       rounded="24px"
     >
       <CardBody>
         <Flex flexDir="column" h="full" justify="space-around" color="#d9d9d9">
-          <Flex justify="space-between">
-            <Heading>IM SHEHZAD</Heading>
+          <Flex
+            mb={{ base: 2, lg: 0 }}
+            flexDir={{ base: "column", lg: "row" }}
+            justify="space-between"
+          >
+            <Heading>I'M SHEHZAD</Heading>
             <Button
               as="a"
               target="_blank"
