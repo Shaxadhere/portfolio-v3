@@ -80,8 +80,8 @@ const Experience = () => {
             key={index}
             m="auto"
             maxW={{ base: "calc(100% - 50px)", lg: "full" }}
-            bg="#0e0e0e"
             h="200px"
+            bg="#0e0e0e"
             rounded="24px"
           >
             <CardBody>

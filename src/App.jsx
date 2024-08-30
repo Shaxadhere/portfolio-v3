@@ -8,6 +8,7 @@ import Numbers from "./components/content/Numbers";
 import Projects from "./components/content/Projects";
 import Reviews from "./components/content/Reviews";
 import Skills from "./components/content/Skills";
+import ProjectsList from "./components/content/ProjectsList";
 
 const App = () => {
   return (
@@ -92,6 +93,7 @@ const App = () => {
       </Box>
 
       <Experience />
+      <ProjectsList />
     </Box>
   );
 };

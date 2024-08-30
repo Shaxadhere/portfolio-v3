@@ -34,6 +34,8 @@ export const INFORMATION = {
             category: "Frontend Development.",
             link: "https://app.evolv-systems.com/",
             date: "Nov 2023",
+            thumbnail: APP_IMAGES.EvolvLMSThumb,
+            logo: APP_IMAGES.EvolvLMSLogo,
         },
         {
             title: "Evolv LMS Student Web App",
