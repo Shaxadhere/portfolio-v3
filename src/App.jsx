@@ -9,6 +9,7 @@ import Projects from "./components/content/Projects";
 import Reviews from "./components/content/Reviews";
 import Skills from "./components/content/Skills";
 import ProjectsList from "./components/content/ProjectsList";
+import FloatingGithubButton from "./components/misc/FloatingGithubButton";
 
 const App = () => {
   return (
@@ -94,6 +95,7 @@ const App = () => {
 
       <Experience />
       <ProjectsList />
+      <FloatingGithubButton/>
     </Box>
   );
 };
