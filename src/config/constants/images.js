@@ -18,6 +18,10 @@ import UrAudits from "../../assets/projects/uraudits-audits-react-webapp.png"
 import ArttLogo from "../../assets/projects/artt-logo.png"
 import MoreoLogo from "../../assets/projects/moreo-logo.png"
 import PtaxLogo from "../../assets/projects/ptax-logo.png"
+import YDriveAdmin from "../../assets/projects/ydrive-admin-web-app.png"
+import YDriveLogo from "../../assets/projects/ydrive-logo.png"
+import BhealthyWebApp from "../../assets/projects/bhealthy-web-app.png"
+import BhealthyLogo from "../../assets/projects/behealthy-logo.svg"
 
 const APP_IMAGES = {
     ME,
@@ -39,7 +43,11 @@ const APP_IMAGES = {
     UrAudits,
     ArttLogo,
     MoreoLogo,
-    PtaxLogo
+    PtaxLogo,
+    YDriveAdmin,
+    YDriveLogo,
+    BhealthyWebApp,
+    BhealthyLogo
 }
 
 export default APP_IMAGES

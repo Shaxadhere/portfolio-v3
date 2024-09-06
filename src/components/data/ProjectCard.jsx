@@ -5,12 +5,9 @@ import {
   Text,
   Link,
   VStack,
-  HStack,
-  chakra,
   Card,
   CardBody,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -25,6 +22,7 @@ const ProjectCard = ({ project }) => {
       className="image-container"
       _before={{
         backgroundImage: `url(${project.thumbnail})`,
+        borderRadius: "24px",
       }}
     >
       <CardBody
@@ -40,6 +38,7 @@ const ProjectCard = ({ project }) => {
             filter={"invert(1) grayscale(1)"}
             src={project.logo}
             alt={project.title}
+            {...project.logoStyles}
           />
           <Heading color={""} size="md">
             {project.title}
@@ -51,9 +50,9 @@ const ProjectCard = ({ project }) => {
             whileHover={{ x: 10 }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <Link href={project.link} isExternal color="teal.300">
+            {project.link?<Link href={project.link} isExternal color="teal.300">
               Visit Project
-            </Link>
+            </Link>:<Text color="gray.500">Private Project</Text>}
           </Box>
 
           <Text fontSize="xs" color="gray.500">
