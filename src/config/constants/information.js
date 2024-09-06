@@ -42,59 +42,79 @@ export const INFORMATION = {
             category: "Frontend Development.",
             link: "https://student.evolv-systems.com/",
             date: "Dec 2023",
+            logo: APP_IMAGES.EvolvLMSLogo,
+            thumbnail: APP_IMAGES.EvolvLmsStudentWebApp,
         },
         {
             title: "Evolv Accounts App",
             category: "Frontend Development.",
             link: "https://accounts.evolv-systems.com/",
             date: "Sep 2023",
+            logo: APP_IMAGES.EvolvLMSLogo,
+            thumbnail: APP_IMAGES.EvolvAccountsApp,
         },
         {
             title: "Evolv LMS Landing Site",
             category: "Frontend Development.",
             link: "https://evolv-systems.com/",
             date: "Aug 2023",
+            logo: APP_IMAGES.EvolvLMSLogo,
+            thumbnail: APP_IMAGES.EvolvLmsLandingSite,
         },
         {
             title: "Evolv Point of Sale",
             category: "MERN Stack Development.",
             link: "https://pos.evolv-systems.com/",
             date: "Oct 2023",
+            logo: APP_IMAGES.EvolvLMSLogo,
+            thumbnail: APP_IMAGES.EvolvPos,
         },
         {
             title: "PTax, Your Complete Tax Assistant",
             category: "MERN Stack Development.",
             link: "https://app.ptax.tax/",
             date: "Sep 2022",
+            logo: APP_IMAGES.PtaxLogo,
+            thumbnail: APP_IMAGES.Ptax,
         },
         {
             title: "UrAudits Web App",
             category: "MERN Stack Development.",
             link: "https://uraudits.com/",
-            date: "Aug 2022"
+            date: "Aug 2022",
+            logo: APP_IMAGES.EvolvLMSLogo,
+            thumbnail: APP_IMAGES.UrAudits,
         },
         {
             title: "Fixnxl Web App",
             category: "Frontend Development",
             link: "https://fixnxl.com/",
-            date: "Oct 2021"
+            date: "Oct 2021",
+            // thumbnail: APP_IMAGES.EvolvLMSLogo,
+            // logo: APP_IMAGES.EvolvLMSLogo,
         },
         {
             title: "Moreo Web App",
             category: "Full Stack Development",
             link: "https://moreo.pk/",
-            date: "Jan 2021"
+            date: "Jan 2021",
+            thumbnail: APP_IMAGES.Moreo,
+            logo: APP_IMAGES.MoreoLogo,
         },
         {
             title: "EARTT - Accounting System",
             category: "Full Stack Development",
             link: "https://artt.edu.pk/eartt/",
-            date: "Feb 2021"
+            date: "Feb 2021",
+            thumbnail: APP_IMAGES.EvolvAccountsApp,
+            logo: APP_IMAGES.ArttLogo,
         },
         {
             title: "ARTT Learning Management System Web App",
             category: "Full Stack Development",
-            date: "Dec 2020"
+            date: "Dec 2020",
+            thumbnail: APP_IMAGES.ArttLms,
+            logo: APP_IMAGES.ArttLogo,
         }
     ],
     REVIEWS: [
