@@ -22,7 +22,7 @@ import APP_IMAGES from "../../config/constants/images";
 let timeout;
 
 const Thanks = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen: true });
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleResumeDownload = () => {
     timeout = setTimeout(() => {
@@ -40,8 +40,8 @@ const Thanks = () => {
     <>
       <Button
         as="a"
-        // target="_blank"
-        // href={INFORMATION.RESUME}
+        target="_blank"
+        href={INFORMATION.RESUME}
         cursor={"pointer"}
         download={true}
         rightIcon={<DownloadIcon />}
