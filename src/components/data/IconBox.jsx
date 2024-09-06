@@ -1,7 +1,7 @@
 import { Image, Flex } from "@chakra-ui/react";
 import React from "react";
 
-const IconBox = ({ title, link = "#", image, ...rest }) => {
+const IconBox = ({ title, link = "#", image, imageProps, ...rest }) => {
   return (
     <Flex
       h={{ base: "85px", lg: "100px" }}
@@ -31,21 +31,8 @@ const IconBox = ({ title, link = "#", image, ...rest }) => {
           //   transform: "translateY(-140%)",
           transition: "all 0.3s ease-in-out",
         }}
+        {...imageProps}
       />
-      {/* <Image
-        maxW="full"
-        maxH="70px"
-        w="70px"
-        h="full"
-        src={image}
-        top="140px"
-        filter="grayscale(100%)"
-        _groupHover={{
-          filter: "grayscale(0%)",
-          transform: "translateY(-140%)",
-          transition: "all 0.3s ease-in-out",
-        }}
-      /> */}
     </Flex>
   );
 };
