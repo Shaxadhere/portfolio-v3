@@ -24,6 +24,7 @@ export const INFORMATION = {
         TWITTER: "https://twitter.com/shaxaddd",
         LINKEDIN: "https://www.linkedin.com/in/shaxadhere/",
         KODERLABS: "https://koderlabs.com/",
+        MEDIUM: "https://shaxadd.medium.com/",
     },
 
     SKILLS: ["JavaScript", "React", "Redux", "Node", "Express", "MongoDB"],

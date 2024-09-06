@@ -2,6 +2,7 @@ import GMAIL from "../../assets/gmail.png"
 import LINKEDIN from "../../assets/linkedin.png"
 import GITHUB from "../../assets/github.png"
 import TWITTER from "../../assets/twitter.svg"
+import MEDIUM from "../../assets/medium.png"
 import CITY_IMAGE from "../../assets/city.jpg"
 import ME from "../../assets/avatar.png"
 import EvolvLMSThumb from "../../assets/projects/evolv-lms-admin-webapp.png"
@@ -30,6 +31,7 @@ const APP_IMAGES = {
     LINKEDIN,
     GITHUB,
     TWITTER,
+    MEDIUM,
     EvolvLMSThumb,
     EvolvLMSLogo,
     Ptax,

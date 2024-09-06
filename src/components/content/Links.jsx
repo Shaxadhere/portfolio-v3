@@ -47,8 +47,8 @@ const Links = () => {
           },
           {
             title: "Twitter",
-            link: INFORMATION.LINKS.TWITTER,
-            image: APP_IMAGES.TWITTER,
+            link: INFORMATION.LINKS.MEDIUM,
+            image: APP_IMAGES.MEDIUM,
           },
         ].map((item, index) => (
           <IconBox
