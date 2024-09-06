@@ -12,7 +12,7 @@ const ProjectsList = () => {
         md: "calc(100% - 200px)",
         xl: "calc(100% - 400px)",
       }}
-      mt={10}
+      mt={{ base: "40px", md: "80px" }}
     >
       <Heading mb={"40px"} color="#d9d9d9" textAlign={"center"}>
         Projects
