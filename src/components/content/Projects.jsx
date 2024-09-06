@@ -9,7 +9,7 @@ const Projects = () => {
         <Heading color="#d9d9d9" fontSize="24px">
           Projects
         </Heading>
-        <Text color="#fff">View All</Text>
+        {/* <Text color="#fff">View All</Text> */}
       </Flex>
       <AutoScrollVStack data={INFORMATION.PROJECTS} />
     </Box>
