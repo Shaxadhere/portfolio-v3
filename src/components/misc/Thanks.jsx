@@ -58,6 +58,7 @@ const Thanks = () => {
       >
         <ModalOverlay />
         <ModalContent
+          py="5"
           bg="gray.800"
           color="white"
           borderRadius="md"
@@ -104,15 +105,7 @@ const Thanks = () => {
                       image={item.image}
                       link={item.link}
                       key={index}
-                      bg="gray.700"
                       transition="all 0.3s"
-                      imageProps={{
-                        _groupHover: {
-                          filter: "invert(1) grayscale(1)",
-                          transition: "all 0.3s",
-                        },
-                      }}
-                      _hover={{ bg: "gray.600" }}
                     />
                   ))}
                 </SimpleGrid>
@@ -120,7 +113,13 @@ const Thanks = () => {
             </VStack>
           </ModalBody>
           <ModalFooter justifyContent="center">
-            <Button mr={3} onClick={onClose}>
+            <Button
+              mt="2"
+              variant={"link"}
+              mr={3}
+              onClick={onClose}
+              color="#eaeaea"
+            >
               Close
             </Button>
           </ModalFooter>

@@ -1,4 +1,5 @@
 import { Box, Grid, GridItem, Heading, Image } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import Brief from "./components/content/Brief";
 import DisplayPicture from "./components/content/DisplayPicture";
 import Experience from "./components/content/Experience";
@@ -11,69 +12,84 @@ import Skills from "./components/content/Skills";
 import ProjectsList from "./components/content/ProjectsList";
 import FloatingGithubButton from "./components/misc/FloatingGithubButton";
 
+const MotionGridItem = motion(GridItem);
+
+const gridItems = [
+  {
+    component: <DisplayPicture />,
+    rowSpan: { base: 12, md: 12 },
+    colSpan: { base: 20, lg: 8 },
+  },
+  {
+    component: <Brief />,
+    rowSpan: { base: 10, md: 4 },
+    colSpan: { base: 20, lg: 8 },
+  },
+  {
+    component: <Links />,
+    rowSpan: { base: 10, md: 4 },
+    colSpan: { base: 20, lg: 4 },
+  },
+  {
+    component: <Skills />,
+    rowSpan: { base: 12, md: 8 },
+    colSpan: { base: 20, lg: 5 },
+  },
+  {
+    component: <LocalTime />,
+    rowSpan: { base: 10, md: 8 },
+    colSpan: { base: 20, lg: 3 },
+  },
+  {
+    component: <Projects />,
+    rowSpan: { base: 12, md: 16 },
+    colSpan: { base: 20, lg: 4 },
+  },
+  {
+    component: <Numbers />,
+    rowSpan: { base: 12, md: 3 },
+    colSpan: { base: 20, md: 8 },
+  },
+  {
+    component: <Reviews />,
+    rowSpan: { base: 12, md: 3 },
+    colSpan: { base: 20, md: 8 },
+  },
+];
+
+const pageVariants = {
+  initial: { opacity: 0, x: -1000, rotate: 45 },
+  animate: {
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      stiffness: 30, // Lower stiffness for slower motion
+      damping: 15, // Slightly higher damping for more controlled movement
+      duration: 2, // Increase duration for a slower animation
+    },
+  },
+};
+
 const App = () => {
   return (
     <Box w={"full"} minH="100vh" py={{ base: "30px", lg: "60px" }}>
       <Grid templateColumns="repeat(20, 1fr)" templateRows="repeat(12, 1fr)">
-        <GridItem
-          p={{ base: 0, lg: 3 }}
-          rowSpan={{ base: 12, md: 12 }}
-          colSpan={{ base: 20, lg: 8 }}
-        >
-          <DisplayPicture />
-        </GridItem>
-        <GridItem
-          px={{ base: 0, lg: 3 }}
-          py={{ base: 3, lg: 3 }}
-          rowSpan={{ base: 10, md: 4 }}
-          colSpan={{ base: 20, lg: 8 }}
-        >
-          <Brief />
-        </GridItem>
-        <GridItem
-          p={{ base: 0, lg: 3 }}
-          rowSpan={{ base: 10, md: 4 }}
-          colSpan={{ base: 20, lg: 4 }}
-        >
-          <Links />
-        </GridItem>
-        <GridItem
-          p={{ base: 0, lg: 3 }}
-          rowSpan={{ base: 12, md: 8 }}
-          colSpan={{ base: 20, lg: 5 }}
-        >
-          <Skills />
-        </GridItem>
-        <GridItem
-          px={{ base: 0, lg: 3 }}
-          py={{ base: 3, lg: 3 }}
-          rowSpan={{ base: 10, md: 8 }}
-          colSpan={{ base: 20, lg: 3 }}
-        >
-          <LocalTime />
-        </GridItem>
-        <GridItem
-          p={{ base: 0, lg: 3 }}
-          rowSpan={{ base: 12, md: 16 }}
-          colSpan={{ base: 20, lg: 4 }}
-        >
-          <Projects />
-        </GridItem>
-        <GridItem
-          p={{ base: 0, lg: 3 }}
-          rowSpan={{ base: 12, md: 3 }}
-          colSpan={{ base: 20, md: 8 }}
-        >
-          <Numbers />
-        </GridItem>
-        <GridItem
-          px={{ base: 0, lg: 3 }}
-          py={{ base: 3, lg: 3 }}
-          rowSpan={{ base: 12, md: 3 }}
-          colSpan={{ base: 20, md: 8 }}
-        >
-          <Reviews />
-        </GridItem>
+        {gridItems.map((item, index) => (
+          <MotionGridItem
+            key={index}
+            p={{ base: 0, lg: 3 }}
+            initial="initial"
+            animate="animate"
+            variants={pageVariants}
+            transition={{ delay: index * 0.5 }} // Further increase delay for slower stagger
+            rowSpan={item.rowSpan}
+            colSpan={item.colSpan}
+          >
+            {item.component}
+          </MotionGridItem>
+        ))}
       </Grid>
       <Box
         m="auto"
@@ -95,7 +111,7 @@ const App = () => {
 
       <Experience />
       <ProjectsList />
-      <FloatingGithubButton/>
+      <FloatingGithubButton />
     </Box>
   );
 };
