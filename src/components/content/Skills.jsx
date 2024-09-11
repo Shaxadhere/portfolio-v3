@@ -1,9 +1,22 @@
-import { Card, CardBody, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
+import {
+  Card,
+  CardBody,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import GlareIcon from "../icons/GlareIcon";
 import { INFORMATION } from "../../config/constants/information";
+import { motion } from "framer-motion";
+
+const MotionImage = motion(Image);
 
 const Skills = () => {
+  const [hoveredSkill, setHoveredSkill] = useState(null);
+
   return (
     <Card
       m="auto"
@@ -23,24 +36,49 @@ const Skills = () => {
         p="40px"
       >
         <Flex flexDir="column" justify="space-between" color="#e8e6ee" h="full">
-          <Flex justify="space-between" w="full">
+          <Flex justify="space-between" alignItems="center" w="full">
             <Heading fontSize="24px">SKILLS</Heading>
-            <GlareIcon
-              w="30px"
-              h="30px"
-              transition="all 0.4s ease-in-out"
-              _groupHover={{
-                transform: "rotate(45deg)",
-                position: "relative",
-                top: "10px",
-                right: "10px",
-              }}
-            />
+
+            {hoveredSkill ? (
+              <MotionImage
+                key={hoveredSkill} // Ensures animation retriggers when hoveredSkill changes
+                rounded="lg"
+                src={INFORMATION.SKILLS[hoveredSkill]}
+                alt={hoveredSkill}
+                w="120px"
+                h="120px"
+                objectFit={"contain"}
+                transition="all 0.4s ease-in-out"
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.5 }}
+              />
+            ) : (
+              <GlareIcon
+                w="30px"
+                h="30px"
+                transition="all 0.4s ease-in-out"
+                _groupHover={{
+                  transform: "rotate(45deg)",
+                  position: "relative",
+                  top: "10px",
+                  right: "10px",
+                }}
+              />
+            )}
           </Flex>
 
-          <VStack spacing="8px" align="stretch">
-            {INFORMATION.SKILLS.map((skill, index) => (
-              <Text fontSize="16px" key={index}>
+          <VStack spacing="0px" align="stretch">
+            {Object.keys(INFORMATION.SKILLS).map((skill, index) => (
+              <Text
+                py="8px"
+                cursor={"pointer"}
+                fontSize="16px"
+                key={index}
+                _hover={{ textDecor: "underline" }}
+                onMouseEnter={() => setHoveredSkill(skill)}
+                onMouseLeave={() => setHoveredSkill(null)} // Reset on mouse leave
+              >
                 {skill}
               </Text>
             ))}

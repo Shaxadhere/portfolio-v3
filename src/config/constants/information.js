@@ -1,4 +1,10 @@
 import APP_IMAGES from "./images";
+import JavascriptImage from "/images/js.png";
+import ReactImage from "/images/react.png";
+import NodeImage from "/images/nodejs.png";
+import ExpressImage from "/images/express.png";
+import MongoDBImage from "/images/mongodb.svg";
+import CSSImage from "/images/css.png";
 
 export const INFORMATION = {
 
@@ -26,9 +32,14 @@ export const INFORMATION = {
         KODERLABS: "https://koderlabs.com/",
         MEDIUM: "https://shaxadd.medium.com/",
     },
-
-    SKILLS: ["JavaScript", "React", "Redux", "Node", "Express", "MongoDB"],
-
+    SKILLS: {
+        JavaScript: JavascriptImage,
+        React: ReactImage,
+        NodeJs: NodeImage,
+        Express: ExpressImage,
+        MongoDB: MongoDBImage,
+        CSS: CSSImage
+    },
     PROJECTS: [
         {
             title: "Evolv LMS Admin",
