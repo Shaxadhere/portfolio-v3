@@ -3,8 +3,6 @@ import LINKEDIN from "../../assets/linkedin.png"
 import GITHUB from "../../assets/github.png"
 import TWITTER from "../../assets/twitter.svg"
 import MEDIUM from "../../assets/medium.png"
-import CITY_IMAGE from "../../assets/city.jpg"
-import ME from "../../assets/avatar.png"
 import EvolvLMSThumb from "../../assets/projects/evolv-lms-admin-webapp.png"
 import EvolvLMSLogo from "../../assets/evolv-lms-logo.png"
 import Ptax from "../../assets/projects/ptax-your-personal-tax-assistand.png"
@@ -25,8 +23,6 @@ import BhealthyWebApp from "../../assets/projects/bhealthy-web-app.png"
 import BhealthyLogo from "../../assets/projects/behealthy-logo.svg"
 
 const APP_IMAGES = {
-    ME,
-    CITY_IMAGE,
     GMAIL,
     LINKEDIN,
     GITHUB,

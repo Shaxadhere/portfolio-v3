@@ -6,10 +6,13 @@ import ExpressImage from "/images/express.png";
 import MongoDBImage from "/images/mongodb.svg";
 import CSSImage from "/images/css.png";
 import CityImage from "/images/city.jpg";
+import ProfilePicture from "/images/avatar.png"
+import ProfilePictureBlurred from "/images/avatar-small.png"
 
 export const INFORMATION = {
 
-    PROFILE_PICTURE: APP_IMAGES.ME,
+    PROFILE_PICTURE: ProfilePicture,
+    ProfilePictureBlurred,
 
     NAME: "SHEHZAD AHMED",
     EMAIL: "shaxad.here@gmail.com",
