@@ -5,6 +5,7 @@ import NodeImage from "/images/nodejs.png";
 import ExpressImage from "/images/express.png";
 import MongoDBImage from "/images/mongodb.svg";
 import CSSImage from "/images/css.png";
+import CityImage from "/images/city.jpg";
 
 export const INFORMATION = {
 
@@ -18,7 +19,7 @@ export const INFORMATION = {
     RESUME: "/Shehzad Ahmed React Developer.pdf",
 
     LOCAL_TIME_ZONE: "Asia/Karachi",
-    CITY_PICTURE: APP_IMAGES.CITY_IMAGE,
+    CITY_PICTURE: CityImage,
     CITY: "Karachi",
     COUNTRY: "Pakistan",
 
