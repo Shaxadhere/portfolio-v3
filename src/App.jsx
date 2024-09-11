@@ -1,5 +1,5 @@
-import { Box, Grid, GridItem, Heading, Image } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+import { motion, useAnimation } from "framer-motion";
 import Brief from "./components/content/Brief";
 import DisplayPicture from "./components/content/DisplayPicture";
 import Experience from "./components/content/Experience";
@@ -11,8 +11,12 @@ import Reviews from "./components/content/Reviews";
 import Skills from "./components/content/Skills";
 import ProjectsList from "./components/content/ProjectsList";
 import FloatingGithubButton from "./components/misc/FloatingGithubButton";
+import Github from "./components/content/Github";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const MotionGridItem = motion(GridItem);
+const MotionBox = motion(Box);
 
 const gridItems = [
   {
@@ -73,6 +77,28 @@ const pageVariants = {
 };
 
 const App = () => {
+  const experienceControls = useAnimation();
+  const projectsControls = useAnimation();
+
+  const [experienceRef, experienceInView] = useInView({
+    threshold: 0.2,
+  });
+  const [projectsRef, projectsInView] = useInView({
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (experienceInView) {
+      experienceControls.start("visible");
+    }
+  }, [experienceControls, experienceInView]);
+
+  useEffect(() => {
+    if (projectsInView) {
+      projectsControls.start("visible");
+    }
+  }, [projectsControls, projectsInView]);
+
   return (
     <Box w={"full"} minH="100vh" py={{ base: "30px", lg: "60px" }}>
       <Grid templateColumns="repeat(20, 1fr)" templateRows="repeat(12, 1fr)">
@@ -91,26 +117,30 @@ const App = () => {
           </MotionGridItem>
         ))}
       </Grid>
-      <Box
-        m="auto"
-        mt={10}
-        maxW={{ base: "calc(100vw - 50px)", md: "calc(100% - 400px)" }}
+      <Github />
+      <MotionBox
+        ref={experienceRef}
+        initial="hidden"
+        animate={experienceControls}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+        }}
       >
-        <Heading mb={"40px"} color="#d9d9d9" textAlign={"center"}>
-          My Github Activity
-        </Heading>
-        <Image
-          mb={20}
-          w="full"
-          src="https://ghchart.rshah.org/shaxadhere"
-          _groupHover={{
-            opacity: 0.7,
-          }}
-        />
-      </Box>
+        <Experience />
+      </MotionBox>
 
-      <Experience />
-      <ProjectsList />
+      <MotionBox
+        ref={projectsRef}
+        initial="hidden"
+        animate={projectsControls}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+        }}
+      >
+        <ProjectsList />
+      </MotionBox>
       <FloatingGithubButton />
     </Box>
   );
