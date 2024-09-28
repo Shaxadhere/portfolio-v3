@@ -11,6 +11,7 @@ import { DownloadIcon } from "@chakra-ui/icons";
 import React from "react";
 import { INFORMATION } from "../../config/constants/information";
 import Thanks from "../misc/Thanks";
+import { COLORS } from "../../config/constants/colors";
 
 const Brief = () => {
   return (
@@ -36,7 +37,7 @@ const Brief = () => {
             designing) exceptional digital experiences. Currently, I’m focused
             on building accessible, human-centered products at{" "}
             <chakra.a
-              color="#745cd6"
+              color={COLORS.PRIMARY}
               target="_blank"
               href={INFORMATION.LINKS.KODERLABS}
             >

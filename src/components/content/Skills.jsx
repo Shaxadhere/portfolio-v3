@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import GlareIcon from "../icons/GlareIcon";
 import { INFORMATION } from "../../config/constants/information";
+import { COLORS } from "../../config/constants/colors";
 import { motion } from "framer-motion";
 
 const MotionImage = motion(Image);
@@ -22,7 +23,7 @@ const Skills = () => {
       m="auto"
       maxW={{ base: "calc(100% - 50px)", lg: "full" }}
       role="group"
-      bg="#745cd6"
+      bg={COLORS.PRIMARY}
       h="full"
       rounded="24px"
     >
