@@ -22,6 +22,8 @@ const ProjectCard = ({ project }) => {
       className="image-container"
       _before={{
         backgroundImage: `url(${project.thumbnail})`,
+        backgroundPositionX:"left",
+        backgroundPositionY:"top",
         borderRadius: "24px",
       }}
     >
