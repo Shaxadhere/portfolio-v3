@@ -8,6 +8,7 @@ import LocalTime from "./components/content/LocalTime";
 import Numbers from "./components/content/Numbers";
 import Projects from "./components/content/Projects";
 import Reviews from "./components/content/Reviews";
+import Monty from "./components/content/Monty";
 import Skills from "./components/content/Skills";
 import ProjectsList from "./components/content/ProjectsList";
 import FloatingGithubButton from "./components/misc/FloatingGithubButton";
@@ -141,6 +142,9 @@ const App = () => {
       >
         <ProjectsList />
       </MotionBox>
+
+      <Monty />
+
       <FloatingGithubButton />
     </Box>
   );
