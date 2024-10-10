@@ -102,7 +102,7 @@ const App = () => {
 
   return (
     <Box w={"full"} minH="100vh" py={{ base: "30px", lg: "60px" }}>
-      <Grid templateColumns="repeat(20, 1fr)" templateRows="repeat(12, 1fr)">
+      <Grid templateColumns="repeat(20, 1fr)" gap={{base:5,lg:0}} templateRows="repeat(12, 1fr)">
         {gridItems.map((item, index) => (
           <MotionGridItem
             key={index}

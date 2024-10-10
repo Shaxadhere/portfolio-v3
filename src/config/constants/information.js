@@ -9,6 +9,9 @@ import CityImage from "/images/city.jpg";
 import ProfilePicture from "/images/avatar.png"
 import ProfilePictureBlurred from "/images/avatar-small.png"
 
+//Companies Logos
+import SimplifiLogo from "/images/companies/simplifi-logo.png"
+
 export const INFORMATION = {
 
     PROFILE_PICTURE: ProfilePicture,
@@ -165,17 +168,11 @@ export const INFORMATION = {
             link: "https://simplifipay.com",
             timeline: "Sep 2024 - Present",
             text: `Instant card issuance in MENA & Pakistan. Issue virtual or physical cards for your customers, employees, or partners to solve business problems and drive your bottom line.`,
-            logo: "https://www.koderlabs.com/assets/img/logo/new-logo.png",
+            logo: SimplifiLogo,
             logoStyles: {
-                bgPos: "bottom",
-                h: "55px",
-                pos: "absolute",
-                bottom: "20px",
-                right: "6px",
-                w: "283px",
-                zIndex: 0,
-                bgSize: "contain",
+                width: "200px"
             },
+            onHoverTransform: "translate(-62%, -59%)"
         },
         {
             designation: "Senior Software Engineer",
@@ -186,15 +183,9 @@ export const INFORMATION = {
           Utilize various programming languages, platforms, frameworks like TypeScript, React.js, React Native, Vue.js and JavaScript.`,
             logo: "https://www.koderlabs.com/assets/img/logo/new-logo.png",
             logoStyles: {
-                bgPos: "bottom",
-                h: "55px",
-                pos: "absolute",
-                bottom: "20px",
-                right: "6px",
-                w: "283px",
-                zIndex: 0,
-                bgSize: "contain",
+                width: "250px"
             },
+            onHoverTransform: "translate(-40%, -190%)"
         },
         {
             designation: "MERN Stack Developer",
@@ -206,15 +197,9 @@ export const INFORMATION = {
           Worked on a Human Resource Management System.`,
             logo: "/fine.png",
             logoStyles: {
-                bgPos: "bottom",
-                h: "85px",
-                pos: "absolute",
-                bottom: "20px",
-                right: "10px",
-                w: "calc(100vw - 275px)",
-                zIndex: 0,
-                bgSize: "contain",
+                width: "200px"
             },
+            onHoverTransform: "translate(-62%, -70%)"
         },
         {
             designation: "MERN Stack Developer",
@@ -226,15 +211,9 @@ export const INFORMATION = {
           Worked on accounting systems for ARTT.`,
             logo: "/artt.png",
             logoStyles: {
-                bgPos: "bottom",
-                h: "100px",
-                pos: "absolute",
-                bottom: "20px",
-                right: "-39px",
-                w: "230px",
-                zIndex: 0,
-                bgSize: "contain",
+                width: "200px"
             },
+            onHoverTransform: "translate(-100%, -28%)"
         },
         {
             designation: "ASP.NET Developer",
@@ -242,17 +221,11 @@ export const INFORMATION = {
             link: "https://artt.edu.pk",
             timeline: "Mar 2019 - Feb 2020 (1yr)",
             text: `Worked on asp.net applications using mssql as database and entity framework, Service webapps. `,
-            logo: "/artt.png",
+            // logo: "/artt.png",
             logoStyles: {
-                bgPos: "bottom",
-                h: "100px",
-                pos: "absolute",
-                bottom: "20px",
-                right: "-39px",
-                w: "230px",
-                zIndex: 0,
-                bgSize: "contain",
+
             },
+            onHoverTransform: "translate(-62%, -59%)"
         },
     ],
     CARRIER_START_DATE: "2019-03-01",

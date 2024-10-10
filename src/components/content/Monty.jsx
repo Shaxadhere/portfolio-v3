@@ -65,7 +65,7 @@ const Monty = () => {
           />
         </Box>
       </Box>
-      <Flex justify="center" pos="relative" top="-200px" left="50px">
+      <Flex justify="center" pos="relative" top="-200px" maxW={"fit-content"} mx="auto">
         <Heading color="#fff" fontSize="sm">
           look morty, This guy is checking out the whole profile
         </Heading>

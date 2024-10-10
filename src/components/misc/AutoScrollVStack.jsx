@@ -42,7 +42,7 @@ const AutoScrollVStack = ({ data }) => {
     <VStack
       className="scrollbar-hidden"
       align="stretch"
-      maxH="600px"
+      maxH={{base:"auto",lg:"600px"}}
       overflowY="auto"
       ref={scrollRef}
       onMouseEnter={() => setIsHovered(true)}

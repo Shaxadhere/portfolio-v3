@@ -28,6 +28,7 @@ const Brief = () => {
             mb={{ base: 2, lg: 0 }}
             flexDir={{ base: "column", lg: "row" }}
             justify="space-between"
+            gap={2}
           >
             <Heading>I'M SHEHZAD</Heading>
             <Thanks />

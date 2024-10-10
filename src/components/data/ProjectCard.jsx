@@ -35,13 +35,13 @@ const ProjectCard = ({ project }) => {
         bgBlendMode={"multiply"}
       >
         <VStack align="start" p="6" spacing="4">
-          <Image
+         {project.logo&&<Image
             h="40px"
             filter={"invert(1) grayscale(1)"}
             src={project.logo}
             alt={project.title}
             {...project.logoStyles}
-          />
+          />}
           <Heading color={""} size="md">
             {project.title}
           </Heading>
