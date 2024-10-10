@@ -32,7 +32,7 @@ const Experience = () => {
             key={index}
             m="auto"
             maxW={{ base: "calc(100% - 50px)", lg: "full" }}
-            h="220px"
+            h={{base:"auto",lg:"220px"}}
             bg="#0e0e0e"
             rounded="24px"
             as="a"
@@ -54,10 +54,7 @@ const Experience = () => {
                 <Flex>
                   <Box>
                     <Heading display={"flex"} fontSize="20px">
-                      {item.designation} @{" "}
-                      <chakra.a target="_blank" href={item.link}>
-                        {item.company}
-                      </chakra.a>
+                      {item.designation} @ {item.company}
                     </Heading>
                     <Text zIndex={"inherit"}>{item.timeline}</Text>
                   </Box>
