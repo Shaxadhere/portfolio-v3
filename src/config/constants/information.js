@@ -22,7 +22,7 @@ export const INFORMATION = {
     PHONE: "+92 333 1234567",
     BRIEF: `"I create intuitive and visually stunning UI/UX designs that
     help businesses connect with their target audiences."`,
-    RESUME: "/Shehzad Ahmed React Developer.pdf",
+    RESUME: "/Shehzad Ahmed Frontend Engineer.pdf",
 
     LOCAL_TIME_ZONE: "Asia/Karachi",
     CITY_PICTURE: CityImage,
