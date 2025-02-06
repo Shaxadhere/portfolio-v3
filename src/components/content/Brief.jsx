@@ -43,7 +43,7 @@ const Brief = () => {
               <Button
                 as="a"
                 target="_blank"
-                href={`mailto:${INFORMATION.EMAIL}`}
+                href={INFORMATION.LINKS.CONTACT_LINK}
                 position="relative"
                 overflow="hidden"
                 px={6}

@@ -38,6 +38,7 @@ export const INFORMATION = {
         LINKEDIN: "https://www.linkedin.com/in/shaxadhere/",
         KODERLABS: "https://koderlabs.com/",
         MEDIUM: "https://shaxadd.medium.com/",
+        CONTACT_LINK:"https://i2ko7kh14di.typeform.com/to/WyRUiOUy"
     },
     SKILLS: {
         JavaScript: JavascriptImage,
