@@ -206,7 +206,7 @@ export const INFORMATION = {
             designation: "MERN Stack Developer",
             company: "ARTT",
             link: "https://artt.edu.pk",
-            timeline: "Nov 2020 - Jan 2022 (1 yr 3 mos)",
+            timeline: "Mar 2019 - Jan 2022 (2 yrs 10 mos)",
             text: `Collaborated with marketing team to develop a marketing website.
           Contributed to the development of learning management systems, which included implementing video lectures with DRM protection and integrating Zoom for live classes.
           Worked on accounting systems for ARTT.`,
@@ -215,18 +215,6 @@ export const INFORMATION = {
                 width: "200px"
             },
             onHoverTransform: "translate(-100%, -28%)"
-        },
-        {
-            designation: "ASP.NET Developer",
-            company: "Marsotech",
-            link: "https://artt.edu.pk",
-            timeline: "Mar 2019 - Feb 2020 (1yr)",
-            text: `Worked on asp.net applications using mssql as database and entity framework, Service webapps. `,
-            // logo: "/artt.png",
-            logoStyles: {
-
-            },
-            onHoverTransform: "translate(-62%, -59%)"
         },
     ],
     CARRIER_START_DATE: "2019-03-01",
