@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Image } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Image, Flex } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import Brief from "./components/content/Brief";
 import DisplayPicture from "./components/content/DisplayPicture";
@@ -101,52 +101,63 @@ const App = () => {
   }, [projectsControls, projectsInView]);
 
   return (
-    <Box w={"full"} minH="100vh" py={{ base: "30px", lg: "60px" }}>
-      <Grid templateColumns="repeat(20, 1fr)" gap={{base:5,lg:0}} templateRows="repeat(12, 1fr)">
-        {gridItems.map((item, index) => (
-          <MotionGridItem
-            key={index}
-            p={{ base: 0, lg: 3 }}
-            initial="initial"
-            animate="animate"
-            variants={pageVariants}
-            transition={{ delay: index * 0.5 }} // Further increase delay for slower stagger
-            rowSpan={item.rowSpan}
-            colSpan={item.colSpan}
-          >
-            {item.component}
-          </MotionGridItem>
-        ))}
-      </Grid>
-      <Github />
-      <MotionBox
-        ref={experienceRef}
-        initial="hidden"
-        animate={experienceControls}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-        }}
+    <Flex justify={"center"}>
+      <Box
+        w={"full"}
+        minH="100vh"
+        py={{ base: "30px", lg: "60px" }}
+        maxW={"1800px"}
       >
-        <Experience />
-      </MotionBox>
+        <Grid
+          templateColumns="repeat(20, 1fr)"
+          gap={{ base: 5, lg: 0 }}
+          templateRows="repeat(12, 1fr)"
+        >
+          {gridItems.map((item, index) => (
+            <MotionGridItem
+              key={index}
+              p={{ base: 0, lg: 3 }}
+              initial="initial"
+              animate="animate"
+              variants={pageVariants}
+              transition={{ delay: index * 0.5 }} // Further increase delay for slower stagger
+              rowSpan={item.rowSpan}
+              colSpan={item.colSpan}
+            >
+              {item.component}
+            </MotionGridItem>
+          ))}
+        </Grid>
+        <Github />
+        <MotionBox
+          ref={experienceRef}
+          initial="hidden"
+          animate={experienceControls}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+          }}
+        >
+          <Experience />
+        </MotionBox>
 
-      <MotionBox
-        ref={projectsRef}
-        initial="hidden"
-        animate={projectsControls}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-        }}
-      >
-        <ProjectsList />
-      </MotionBox>
+        <MotionBox
+          ref={projectsRef}
+          initial="hidden"
+          animate={projectsControls}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+          }}
+        >
+          <ProjectsList />
+        </MotionBox>
 
-      <Monty />
+        <Monty />
 
-      <FloatingGithubButton />
-    </Box>
+        <FloatingGithubButton />
+      </Box>
+    </Flex>
   );
 };
 
