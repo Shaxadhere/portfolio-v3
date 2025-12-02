@@ -59,7 +59,7 @@ const Brief = () => {
                 _active={{ color: "dark" }}
                 transition="all 0.3s ease-in-out"
               >
-                <Text zIndex={1}>Hire me ($30/hour)</Text>
+                <Text zIndex={1}>Hire me ($40/hour)</Text>
                 <Box
                   position="absolute"
                   top={0}

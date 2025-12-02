@@ -141,20 +141,6 @@ const App = () => {
           <Experience />
         </MotionBox>
 
-        <MotionBox
-          ref={projectsRef}
-          initial="hidden"
-          animate={projectsControls}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-          }}
-        >
-          <ProjectsList />
-        </MotionBox>
-
-        <Monty />
-
         <FloatingGithubButton />
       </Box>
     </Flex>

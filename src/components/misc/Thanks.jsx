@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   Modal,
   ModalOverlay,
@@ -8,7 +8,6 @@ import {
   ModalFooter,
   Button,
   Text,
-  IconButton,
   useDisclosure,
   VStack,
   HStack,
@@ -70,7 +69,7 @@ const Thanks = () => {
           <ModalBody>
             <VStack spacing={4}>
               <Text fontSize="lg" textAlign="center">
-                You're one step closer to hiring me!
+              Now my resume is in your downloads folder.
               </Text>
               <Text fontSize="sm" textAlign="center" color="gray.400">
                 Feel free to check out my other work while you're here.
