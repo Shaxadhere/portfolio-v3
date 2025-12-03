@@ -1,4 +1,3 @@
-import APP_IMAGES from "./images";
 import JavascriptImage from "/images/js.png";
 import ReactImage from "/images/react.png";
 import NodeImage from "/images/nodejs.png";
@@ -6,15 +5,15 @@ import ExpressImage from "/images/express.png";
 import MongoDBImage from "/images/mongodb.svg";
 import CSSImage from "/images/css.png";
 import CityImage from "/images/city.jpg";
-import ProfilePicture from "/images/avatar.png"
-import ProfilePictureBlurred from "/images/avatar-small.png"
+import ProfilePicture from "/images/avatar.jpg"
+import ProfilePictureBlurred from "/images/avatar-small.jpg"
 
 //Companies Logos
 import SimplifiLogo from "/images/companies/simplifi-logo.png"
 
 export const INFORMATION = {
 
-    PROFILE_PICTURE: "ProfilePicture",
+    PROFILE_PICTURE: ProfilePicture,
     ProfilePictureBlurred,
 
     NAME: "SHEHZAD AHMED",
