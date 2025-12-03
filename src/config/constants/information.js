@@ -5,8 +5,8 @@ import ExpressImage from "/images/express.png";
 import MongoDBImage from "/images/mongodb.svg";
 import CSSImage from "/images/css.png";
 import CityImage from "/images/city.jpg";
-import ProfilePicture from "/images/avatar.jpg"
-import ProfilePictureBlurred from "/images/avatar-small.jpg"
+import ProfilePicture from "/images/avatar.png"
+import ProfilePictureBlurred from "/images/avatar-small.png"
 
 //Companies Logos
 import SimplifiLogo from "/images/companies/simplifi-logo.png"

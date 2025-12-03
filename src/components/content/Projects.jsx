@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { INFORMATION } from "../../config/constants/information";
 import AutoScrollVStack from "../misc/AutoScrollVStack";
+import { sortProjectsByDate } from "../../utils/date.utils";
 
 const Projects = () => {
   return (
@@ -9,9 +10,8 @@ const Projects = () => {
         <Heading color="#d9d9d9" fontSize="24px">
           Projects
         </Heading>
-        {/* <Text color="#fff">View All</Text> */}
       </Flex>
-      <AutoScrollVStack data={INFORMATION.PROJECTS} />
+      <AutoScrollVStack data={sortProjectsByDate(INFORMATION.PROJECTS)} />
     </Box>
   );
 };
