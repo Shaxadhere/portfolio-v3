@@ -1,5 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
-import { VStack, Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { useEffect, useRef, useState } from "react";
+import {
+  VStack,
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Badge,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 
 const AutoScrollVStack = ({ data }) => {
   const scrollRef = useRef(null);
@@ -42,7 +51,7 @@ const AutoScrollVStack = ({ data }) => {
     <VStack
       className="scrollbar-hidden"
       align="stretch"
-      maxH={{base:"auto",lg:"600px"}}
+      maxH={{ base: "auto", lg: "600px" }}
       overflowY="auto"
       ref={scrollRef}
       onMouseEnter={() => setIsHovered(true)}
@@ -58,6 +67,7 @@ const AutoScrollVStack = ({ data }) => {
           cursor="pointer"
           as="a"
           target="_blank"
+          role="group"
           href={item.link}
           _hover={{
             shadow: "md",
@@ -70,6 +80,31 @@ const AutoScrollVStack = ({ data }) => {
             <Text>{item.date}</Text>
           </Flex>
           <Text color="#fff">{item.category}</Text>
+
+          {/* Smooth expanding box */}
+          <Box
+            overflow="hidden"
+            h="0"
+            opacity={0}
+            transition="all 0.3s ease-in-out"
+            _groupHover={{
+              h: "120px", // target height
+              opacity: 1,
+            }}
+            // bg="red"
+            mt="8px"
+          >
+            <Box fontSize={"14px"}>{item.shortDesc}</Box>
+            <Box fontSize={"14px"} mt="2">
+              <Wrap>
+                {item.stack?.split(",")?.map((item) => (
+                  <WrapItem>
+                    <Badge fontSize={"11px"}>{item}</Badge>
+                  </WrapItem>
+                ))}
+              </Wrap>
+            </Box>
+          </Box>
         </Box>
       ))}
     </VStack>
