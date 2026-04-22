@@ -89,6 +89,46 @@ export const INFORMATION = {
             stack: "Next.js, Tailwind CSS, Framer Motion"
         },
         {
+            title: "Income Bridge Solutions Website",
+            category: "Website Development.",
+            link: "https://incomebridgesolutions.com/",
+            date: "April 2026",
+            shortDesc: "A sleek, mobile-optimized website highlighting Income Bridge Solutions’ services and customer features.",
+            stack: "Next.js, Tailwind CSS, Framer Motion"
+        },
+        {
+            title: "WithMe App Website",
+            category: "Website Development.",
+            link: "https://make-friends-two.vercel.app/",
+            date: "April 2026",
+            shortDesc: "A sleek, mobile-optimized website highlighting WithMe App’s services and customer features.",
+            stack: "Next.js, Tailwind CSS, Framer Motion"
+        },
+        {
+            title: "Pets Care n Cure Website",
+            category: "Website Development.",
+            link: "https://vets-website.vercel.app/",
+            date: "April 2026",
+            shortDesc: "A sleek, mobile-optimized website highlighting Pets Care n Cure’s services and customer features.",
+            stack: "Next.js, Tailwind CSS, Framer Motion"
+        },
+        {
+            title: "AI Reel Maker",
+            category: "Product Development.",
+            link: "https://warzone-clip-crafter.vercel.app/",
+            date: "April 2026",
+            shortDesc: "An AI-powered web app that automatically turns your gameplay clips into shareable highlight reels.",
+            stack: "Next.js, Tailwind CSS, Framer Motion"
+        },
+        {
+            title: "Portfolio V4",
+            category: "Website Development",
+            link: "https://portfolio-v4-one-mu.vercel.app/",
+            date: "April 2026",
+            shortDesc: "A sleek, mobile-optimized website for my portfolio.",
+            stack: "Next.js, Tailwind CSS, Framer Motion"
+        },
+        {
             title: "Maryam Haider Portfolio",
             category: "Website Development.",
             link: "https://maryamhaider.me/",
