@@ -3,7 +3,7 @@ import ReactImage from "/images/react.png";
 import NodeImage from "/images/nodejs.png";
 import ExpressImage from "/images/express.png";
 import MongoDBImage from "/images/mongodb.svg";
-import CSSImage from "/images/css.png";
+import n8nImage from "/images/n8n.png";
 import CityImage from "/images/city.jpg";
 import ProfilePicture from "/images/avatar.jpg"
 import ProfilePictureBlurred from "/images/avatar-small.png"
@@ -17,11 +17,13 @@ export const INFORMATION = {
     ProfilePictureBlurred,
 
     NAME: "SHEHZAD AHMED",
+    FIRST_NAME: "SHEHZAD",
     EMAIL: "shaxad.here@gmail.com",
     PHONE: "+92 333 1234567",
-    BRIEF: `"I create intuitive and visually stunning UI/UX designs that
-    help businesses connect with their target audiences."`,
-    RESUME: "/Shehzad Ahmed Senior Software Engineer Resume.pdf",
+    BRIEF: `"I'm a Software & AI Automations Engineer building smooth solutions for lengthy processes, helping businesses and individuals save time and increase productivity with softwares and automated workflows."`,
+    RESUME: "/Shehzad Ahmed - Software & AI Automation Engineer Resume.pdf",
+    RATE: "$20/hour",
+    GITHUB_USERNAME: "shaxadhere",
 
     LOCAL_TIME_ZONE: "Asia/Karachi",
     CITY_PICTURE: CityImage,
@@ -29,7 +31,8 @@ export const INFORMATION = {
     COUNTRY: "Pakistan",
 
     EXPIRIENCE: 5,
-    TOTAL_PROJECTS: 32,
+    TOTAL_PROJECTS: 40,
+    TOTAL_CLIENTS: 34,
 
     LINKS: {
         GITHUB: "https://github.com/shaxadhere",
@@ -43,9 +46,9 @@ export const INFORMATION = {
         JavaScript: JavascriptImage,
         React: ReactImage,
         NodeJs: NodeImage,
+        n8n: n8nImage,
         Express: ExpressImage,
         MongoDB: MongoDBImage,
-        CSS: CSSImage
     },
     PROJECTS: [
         {
@@ -56,14 +59,7 @@ export const INFORMATION = {
             shortDesc: "A modern cruise-booking frontend built to deliver a smooth, visually rich, and user-friendly reservation experience.",
             stack: "React.js, Tailwind CSS, React Query."
         },
-        {
-            title: "RunOcean Website",
-            category: "Website Development.",
-            link: "https://runocean-proposal.vercel.app",
-            date: "Oct 2025",
-            shortDesc: "A clean and responsive marketing website showcasing RunOcean’s services and brand identity.",
-            stack: "Next.js, Tailwind CSS, Vercel"
-        },
+
         {
             title: "Simplifi Portal",
             category: "Frontend Development.",
@@ -129,9 +125,17 @@ export const INFORMATION = {
             stack: "Next.js, Tailwind CSS, Framer Motion"
         },
         {
+            title: "RunOcean Website",
+            category: "Website Development.",
+            link: "https://runocean-proposal.vercel.app",
+            date: "Oct 2025",
+            shortDesc: "A clean and responsive marketing website showcasing RunOcean’s services and brand identity.",
+            stack: "Next.js, Tailwind CSS, Vercel"
+        },
+        {
             title: "Maryam Haider Portfolio",
             category: "Website Development.",
-            link: "https://maryamhaider.me/",
+            link: "https://maryamhaider.vercel.app/",
             date: "June 2025",
             shortDesc: "A personal portfolio site built with premium design, animations, and a strong focus on professional presentation.",
             stack: "React.js, Chakra UI"
@@ -413,7 +417,7 @@ export const INFORMATION = {
             onHoverTransform: "translate(-62%, -59%)"
         },
         {
-            designation: "Senior Software Engineer",
+            designation: "Software Engineer",
             company: "Koderlabs",
             link: "https://koderlabs.com",
             timeline: "Nov 2022 - Sep 2024 (1 yr 11 mos)",

@@ -9,7 +9,6 @@ const onMouseMove = (e) => {
   const anchorX = rekt.left + rekt.width / 2;
   const anchorY = rekt.top + rekt.height / 2;
   const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
-  console.log(angleDeg);
   const eyes = document.querySelectorAll(".eye");
   eyes.forEach((eye) => {
     eye.style.transform = `rotate(${90 + angleDeg}deg)`;
@@ -31,7 +30,7 @@ const Monty = () => {
   }, []);
 
   return (
-    <Box display={{base:"none",lg:"block"}}>
+    <Box display={{ base: "none", lg: "block" }}>
       <Box className="monty-container">
         <Image
           id="anchor"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, Box, Image } from "@chakra-ui/react";
 import { INFORMATION } from "../../config/constants/information";
 

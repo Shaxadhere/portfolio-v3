@@ -1,10 +1,7 @@
 import { Card, CardBody } from "@chakra-ui/react";
-import { useRef } from "react";
 import AutoScrollHStack from "../misc/AutoScrollHStack";
 
 const Reviews = () => {
-  const ref = useRef(null);
-
   const array = [
     {
       name: "Techon 3 (2021)",

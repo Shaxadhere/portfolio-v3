@@ -5,15 +5,11 @@ import {
   Heading,
   Text,
   Button,
-  chakra,
   Box,
   keyframes,
 } from "@chakra-ui/react";
-import { DownloadIcon } from "@chakra-ui/icons";
-import React from "react";
 import { INFORMATION } from "../../config/constants/information";
 import Thanks from "../misc/Thanks";
-import { COLORS } from "../../config/constants/colors";
 
 const shine = keyframes`
   0% { left: -100%; }
@@ -37,7 +33,7 @@ const Brief = () => {
             justify="space-between"
             gap={2}
           >
-            <Heading>I'M SHEHZAD</Heading>
+            <Heading>I'M {INFORMATION.FIRST_NAME}</Heading>
             <Flex gap={1}>
               <Thanks />
               <Button
@@ -59,7 +55,7 @@ const Brief = () => {
                 _active={{ color: "dark" }}
                 transition="all 0.3s ease-in-out"
               >
-                <Text zIndex={1}>Hire me ($40/hour)</Text>
+                <Text zIndex={1}>Hire me ({INFORMATION.RATE})</Text>
                 <Box
                   position="absolute"
                   top={0}
@@ -86,17 +82,7 @@ const Brief = () => {
             </Flex>
           </Flex>
           <Text>
-            I’m a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I’m focused
-            on building accessible, human-centered products at{" "}
-            <chakra.a
-              color={COLORS.PRIMARY}
-              target="_blank"
-              href={INFORMATION.LINKS.KODERLABS}
-            >
-              Koderlabs
-            </chakra.a>
-            .
+            {INFORMATION.BRIEF}
           </Text>
         </Flex>
       </CardBody>

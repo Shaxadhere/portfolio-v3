@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Box, Heading, Image } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Experience from "./Experience";
-import ProjectsList from "./ProjectsList";
+import { INFORMATION } from "../../config/constants/information";
 
 // Create motion components from Chakra components
 const MotionBox = motion(Box);
@@ -40,7 +39,7 @@ const Github = () => {
       <MotionImage
         mb={20}
         w="full"
-        src="https://ghchart.rshah.org/shaxadhere"
+        src={`https://ghchart.rshah.org/${INFORMATION.GITHUB_USERNAME}`}
         _groupHover={{
           opacity: 0.7,
         }}

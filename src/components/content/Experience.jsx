@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Heading,
@@ -6,7 +5,6 @@ import {
   Card,
   CardBody,
   Flex,
-  chakra,
   Text,
   Image,
 } from "@chakra-ui/react";
@@ -32,18 +30,15 @@ const Experience = () => {
             key={index}
             m="auto"
             maxW={{ base: "calc(100% - 50px)", lg: "full" }}
-            h={{base:"auto",lg:"220px"}}
+            h={{ base: "auto", lg: "220px" }}
             bg="#0e0e0e"
             rounded="24px"
             as="a"
-            href={item.logo &&item.link}
-            target={item.logo &&"_blank"}
+            href={item.logo && item.link}
+            target={item.logo && "_blank"}
           >
             <CardBody pos={"relative"} role="group">
               <Flex
-                // _groupHover={
-                //   item.logo && { opacity: 0.1, bg: "#fff", rounded: "lg" }
-                // }
                 transition={"all 0.3s ease"}
                 flexDir="column"
                 h="full"
@@ -72,11 +67,6 @@ const Experience = () => {
                   h="auto"
                   alt={item.company}
                   transition={"all 0.3s ease"}
-                  // _groupHover={{
-                  //   transform: item.onHoverTransform,
-                  //   opacity: 1,
-                  //   filter: "none",
-                  // }}
                   {...item.logoStyles}
                 />
               )}
